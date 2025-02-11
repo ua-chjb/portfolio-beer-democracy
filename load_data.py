@@ -2,11 +2,11 @@ import pandas as pd
 import numpy as np
 
 # athentication credentials using specific service account, keys downloaded locally
-import os
-from google.cloud import storage
+# import os
+# from google.cloud import storage
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "dash-app-2-happiness-and-beer-d8f67c215677.json"
-client = storage.Client()
+# os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "dash-app-2-happiness-and-beer-d8f67c215677.json"
+# client = storage.Client()
 
 # read in data
 
