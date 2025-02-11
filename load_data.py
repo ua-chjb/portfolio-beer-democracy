@@ -10,11 +10,11 @@ client = storage.Client()
 
 # read in data
 
-beer = pd.read_csv(r"https://raw.githubusercontent.com/ua-chjb/beer_and_happiness/refs/heads/main/assets/data/beer_sum.csv")
+beer = pd.read_csv(r"https://raw.githubusercontent.com/ua-chjb/portfolio-beer-democracy/refs/heads/main/assets/data/beer_sum.csv")
 
-dem = pd.read_csv(r"https://raw.githubusercontent.com/ua-chjb/beer_and_happiness/refs/heads/main/assets/data/dem_sum.csv")
+dem = pd.read_csv(r"https://raw.githubusercontent.com/ua-chjb/portfolio-beer-democracy/refs/heads/main/assets/data/dem_sum.csv")
 
-pop = pd.read_csv(r"https://raw.githubusercontent.com/ua-chjb/beer_and_happiness/refs/heads/main/assets/data/pop_sum.csv")
+pop = pd.read_csv(r"https://raw.githubusercontent.com/ua-chjb/portfolio-beer-democracy/refs/heads/main/assets/data/pop_sum.csv")
 
 beer = beer.rename(columns={"Unnamed: 0": "Country"})
 beer = beer.set_index("Country")
