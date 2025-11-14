@@ -37,7 +37,7 @@ def callbacks_baby(app):
                     "x": ann_x[0],
                     "y": ann_y[0],
                     "text": label,
-                    }
+                }
                 fig.add_annotation(ann)
 
 

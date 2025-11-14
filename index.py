@@ -191,7 +191,7 @@ link_github = "https://www.github.com/ua-chjb"
 icon_linkedin = DashIconify(icon="devicon-plain:linkedin", width=30, color=color, className="bb")
 link_linkedin = "https://linkedin.com/in/benjaminbnoyes"
 icon_email = DashIconify(icon="mdi:email", width=30, color=color, className="bb")
-link_email = "mailto:noyesbenjamin7@gmail.com"
+link_email = "mailto:noyesbenjamin@gmail.com"
 icon_spotify = DashIconify(icon="cib:spotify", width=30, color=color, className="bb")
 link_spotify = "https://open.spotify.com/playlist/2s1oHEgwqxVKoqNdOC1Zs4?si=17fbc35fb4c9421c"
 icon_soundcloud = DashIconify(icon="cib:soundcloud", width=40, color=color, className="bb")
