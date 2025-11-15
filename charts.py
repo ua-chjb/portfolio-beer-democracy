@@ -87,8 +87,8 @@ def fig_C_scatter(df1, df2, year1, year2, size=None, conf=0.95, colors=px.colors
 
     # figures needed for inferential statistics
     n = x_arr.size
-    m = x_arr[1]
-    dof = n - m
+    m = 1
+    dof = n - m - 1
     t = stats.t.ppf(conf, dof)
 
     resid = y_arr - y_hat
