@@ -74,6 +74,9 @@ h1, h2, h3, h4, h5, h6, p {
 .comp5_select_year {
     grid-row: 3 / 4;
     grid-column: 2 / 3;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
 }
 
 #comp4_FIGfig_beerchart {
@@ -97,59 +100,75 @@ h1, h2, h3, h4, h5, h6, p {
     height: 100%;
 }
 
-/*  */
+/* footer */
 
-.f {
+.footie-all {
     height: 30vh;
     background-color: #9fd8a4;
     display: grid;
     grid-template-rows: 19fr 1fr;
-    grid-template-columns: 8fr 1fr 1fr 1fr 1fr 1fr 8fr;
+    grid-template-columns: 1fr 60px 60px 60px 60px 60px 1fr;
 }
 
-.footnt {
-	display: flex;
-	align-items: center;
-	justify-content:center;
-	padding: 2vh;
+.footie-middle {
+    grid-column: 2/7;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.footnt-parent {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:center;
+    padding: 20px;
+}
+
+.footnt-child {
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+
 
 .bb {
-	transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
 }
 
 .bb:hover {
-	transform: translate(0, -1vh);
+    transform: translate(0, -1vh);
 }
 
 .comp20_footer0_github {
-	grid-column: 2 / 3;
+    grid-column: 2 / 3;
 }
 
 .comp21_footer1_linkedin {
-	grid-column: 3 / 4;
+    grid-column: 3 / 4;
 }
 
 .comp22_footer2_email {
-	grid-column: 4 / 5;
+    grid-column: 4 / 5;
 }
 
 .comp23_footer3_spotify {
-	grid-column: 5 / 6;
+    grid-column: 5 / 6;
 }
 
 .comp24_footer4_soundcloud {
-	grid-column: 6 / 7;
+    grid-column: 6 / 7;
 }
 
 .footertinytext {
-	color: white;
-	font-size: 10px;
-	grid-row: 2 / 3;
-	grid-column: 1 / 8;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    color: white;
+    font-size: 10px;
+    grid-row: 2 / 3;
+    grid-column: 1 / 8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*  */

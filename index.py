@@ -137,13 +137,17 @@ comp4_fig_beerchart = dmc.Card(
 
 comp5_select_year = dmc.Card(
     [
-        dcc.RangeSlider(
-            min=2008,
-            max=2018,
-            step=1,
-            marks=dict(zip( range(2008, 2019, 2), [str(k) for k in range(2008, 2019, 2)] )),
-            value=[2008, 2018],
-            id="comp5_SELECTselect_year"
+        html.Div(
+            [
+                dcc.RangeSlider(
+                    min=2008,
+                    max=2018,
+                    step=1,
+                    marks=dict(zip( range(2008, 2019, 2), [str(k) for k in range(2008, 2019, 2)] )),
+                    value=[2008, 2018],
+                    id="comp5_SELECTselect_year"
+                )
+            ]
         )
     ],
     withBorder=True,
@@ -184,6 +188,7 @@ block2 = html.Div (
 
 
 # # # # # # # # # # # # # # footer # # # # # # # # # # # # # #
+
 color = "white"
 
 icon_github = DashIconify(icon="simple-icons:github", width=30, color=color, className="bb")
@@ -201,51 +206,90 @@ link_soundcloud = "https://soundcloud.com/bennoyes-onb"
 comp20_footer0_github = dmc.Anchor(
     icon_github, href=link_github, target="_blank", 
     size="xl",
-    className="footnt comp20_footer0_github"
+    className="footnt-child comp20_footer0_github"
 )
 
 comp21_footer1_linkedin = dmc.Anchor(
     icon_linkedin, href=link_linkedin, target="_blank", 
     size="xl",
-    className="footnt comp21_footer1_linkedin"
+    className="footnt-child comp21_footer1_linkedin"
 )
 
 comp22_footer2_email = dmc.Anchor(
     icon_email, href=link_email, target="_blank", 
     size="sm",
-    className="footnt comp22_footer2_email"
+    className="footnt-child comp22_footer2_email"
 )
 
 comp23_footer3_spotify = dmc.Anchor(
     icon_spotify, href=link_spotify, target="_blank", 
     size="xl",
-    className="footnt comp23_footer3_spotify"
+    className="footnt-child comp23_footer3_spotify"
 )
 
 comp24_footer4_soundcloud = dmc.Anchor(
     icon_soundcloud, href=link_soundcloud, target="_blank",
     size="xl",
-    className="footnt comp24_footer4_soundcloud"
+    className="footnt-child comp24_footer4_soundcloud"
 )
 
 comp25_copyrightfooter = html.P(
-    "© Benjamin Noyes 2024 all rights reserved",
+    "© Benjamin Noyes 2025 all rights reserved",
     className="footertinytext"
 )
 
+comp27_github_parent = html.Div(
+    [
+        comp20_footer0_github
+    ],
+    className="footnt-parent"
+)
+comp28_linkedin_parent = html.Div(
+    [
+        comp21_footer1_linkedin
+    ],
+    className="footnt-parent"
+)
+comp29_email_parent = html.Div(
+    [
+        comp22_footer2_email
+    ],
+    className="footnt-parent"
+)
+comp30_spotify_parent = html.Div(
+    [
+        comp23_footer3_spotify
+    ],
+    className="footnt-parent"
+)
+comp31_soundcloud_parent = html.Div(
+    [
+        comp24_footer4_soundcloud
+    ],
+    className="footnt-parent"
+)
+
+comp26_icons = html.Div(
+    [
+        comp27_github_parent,
+        comp28_linkedin_parent,
+        comp29_email_parent,
+        comp30_spotify_parent,
+        comp31_soundcloud_parent
+    ],
+    className="footie-middle"
+)
+
+
 footer = dmc.Card(
     [
-        comp20_footer0_github,
-        comp21_footer1_linkedin,
-        comp22_footer2_email,
-        comp23_footer3_spotify,
-        comp24_footer4_soundcloud,
+        comp26_icons,
         comp25_copyrightfooter
     ],
     withBorder=True,
     shadow="sm",
     radius="md",
-    className="t f"
+    className="t footie-all",
 )
 
 # # # # # # # # # # # # # # title # # # # # # # # # # # # # #
